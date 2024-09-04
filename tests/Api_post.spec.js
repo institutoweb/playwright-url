@@ -11,7 +11,7 @@ test('Token Test', async ({ page }) => {
             }
 
         // llamo la api por post
-        const respuesta = await requerimiento.post('https://cursotesting.com.ar:5000/token', { data: pidoToken, Headers:{'Content-type':'application/json'},})
+        const respuesta = await requerimiento.post('https://cursotesting.com.ar:3000/token', { data: pidoToken, Headers:{'Content-type':'application/json'},})
 // cotejar que los datos de envío de la solicitud tengan que previamente o no ser convertidos a Json con JSON.Stringify()
 
         /// lo que recibo lo convierto en json
